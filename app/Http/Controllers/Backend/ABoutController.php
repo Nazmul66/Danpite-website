@@ -28,7 +28,7 @@ class ABoutController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       
     }
 
     /**
