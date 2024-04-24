@@ -1,0 +1,23 @@
+.card-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #566a7f;
+    padding: 1.5rem;
+    opacity: 0.8;
+    margin: 0;
+}
+.card-title h5{
+    color: #566a7f;
+    margin: 0;
+}
+.action_btn{
+    font-weight: 400;
+    color: #697a8d;
+    text-align: inherit;
+    background-color: transparent;
+    border: 0;
+}
+.action_btn i{
+   font-size: 24px;
+}
