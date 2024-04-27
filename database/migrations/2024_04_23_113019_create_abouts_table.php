@@ -16,9 +16,8 @@ return new class extends Migration
             $table->string('about_title');
             $table->text('about_desc');
             $table->string('about_img');
-            $table->string('about_btn_link');
-            $table->tinyInteger('status')->default(1);
-            
+            $table->string('about_btn');
+            $table->integer('status')->default(1)->comment('1=active, 2=inactive');
             $table->timestamps();
         });
     }

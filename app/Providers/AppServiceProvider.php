@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Slider;
 use Illuminate\Support\ServiceProvider;
+use App\Models\Setting;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +21,18 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // $settings = Setting::first();
+        // view()->share('setting', $settings);
+
+
+        // for multiple data send
+        view()->composer('*', function($view)
+        {
+            $settings = Setting::first();
+            $slider_data= Slider::first();
+            $view->with(['setting'=> $settings,
+                
+                'slider_data'=> $slider_data]);
+        });
     }
 }

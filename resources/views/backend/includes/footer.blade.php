@@ -3,8 +3,8 @@
       <div class="mb-2 mb-md-0">
         ©
         <script> document.write(new Date().getFullYear());</script>
-        , made with ❤️ by
-        <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
+        2024, All Right Reserved. Designed & Developed By
+        <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">{{ $setting->copyright }}</a>
       </div>
     </div>
   </footer>
